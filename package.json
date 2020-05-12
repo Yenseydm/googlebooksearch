@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "6.11.1"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "express": "^4.17.1",
