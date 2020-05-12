@@ -1,25 +1,34 @@
 import React from "react";
 
-// This file exports the Input, and FormBtn components
 
-export function Input(props) {
-	return (
-		<div className="form-group">
-			<input className="form-control" {...props} />
+function Form(props){
+return (
+  <div className="container">
+  <form>
+    <div className="form-group">
+	<div class="row">
+	<div class="col s3"></div>
+	<div class="col s6">
+	  <input
+        onChange={props.handleInputChange}
+        value={props.search}
+        name="search"
+        type="text"
+        className="form-control"
+        placeholder="Book Name"
+        id="search"
+      />
+	</div>
+	<div class="col">
+      <button onClick={props.handleFormSubmit} className=" btn btn-floating btn-large waves-effect waves-light red">
+	  <i class="material-icons left">search</i>Search
+        </button>
 		</div>
-	);
+	</div>
+    </div>
+  </form>
+  </div>
+);
 }
 
-export function FormBtn(props) {
-	return (
-		<button
-			{...props}
-			style={{ float: "right", marginBottom: 10 }}
-			className="btn btn-success">
-			{/* What this.props.children does is that it is used to display whatever you include between the opening and closing tags when invoking a component. */}
-			{props.children}
-		</button>
-	);
-}
-
-export default FormBtn;
+export default Form;
