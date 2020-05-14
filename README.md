@@ -1,4 +1,3 @@
-# googlebooksearch
 
 # Google Book Search
 
