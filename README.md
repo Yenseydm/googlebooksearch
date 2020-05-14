@@ -1,7 +1,7 @@
 
 # Google Book Search
 
-With this application you are able to search for anybooks and view them using books.google.com.
+With this application you are able to search for anybooks and view them using books.google.com api.
 
 ![Demo](name-of-giphy.gif)
 
